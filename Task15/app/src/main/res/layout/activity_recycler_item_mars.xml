@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/marsImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_mars"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/marsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Марс"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/marsImageView"
+        app:layout_constraintStart_toEndOf="@+id/marsImageView"
+        app:layout_constraintTop_toTopOf="@+id/marsImageView"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/moveItemUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/marsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/moveItemDown"
+        app:layout_constraintStart_toEndOf="@+id/marsTextView"
+        app:layout_constraintTop_toTopOf="@+id/marsTextView"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/moveItemDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/marsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moveItemUp"
+        app:layout_constraintTop_toTopOf="@+id/marsTextView"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/marsDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Марс -- четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы. Названа в честь Марса -- древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей минералом маггемитом (оксидом железа)."
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marsImageView"
+        tools:visibility="visible"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
