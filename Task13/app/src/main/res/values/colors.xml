@@ -1,0 +1,8 @@
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="accent_1">#4EA3FF</color>
+    <color name="accent_2">#7A4EFF</color>
+    <color name="muted_text">#A9B3D1</color>
+</resources>
+
