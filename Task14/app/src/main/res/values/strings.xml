@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task14Recycler</string>
+    <string name="title_header">Список</string>
+    <string name="fab_add">Добавить задачу</string>
+    <string name="dialog_title_add">Добавить элемент</string>
+    <string name="dialog_title_edit">Редактировать элемент</string>
+    <string name="dialog_hint_task">Введите текст задачи</string>
+    <string name="drag_handle_desc">Перетаскивание элемента</string>
+    <string name="action_add">Добавить</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="task_deleted">Удалено: %1$s</string>
+</resources>
+
